@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  p
+  p
+  form(method='post',action='')
+        label(for='name') Name:
+        input(type='text',name='name',id='name')   
+        p     
+        label(for='description') Description:
+        input(type='text',name='description',id='description') 
+        p
+        p   Attributes and values:  
+        label(for='attribute1') 
+        input(type='text',name='attribute1',id='attribute1') 
+        label(for='value1')
+        input(type='text',name='value1',id='value1') 
+        p
+        label(for='attribute2') 
+        input(type='text',name='attribute2',id='attribute2') 
+        label(for='value2')
+        input(type='text',name='value2',id='value2') 
+        p
+        label(for='type') Type:
+        input(type='text',name='type',id='type')  
+        p
+        p Location:
+        label(for='lat') Lat:
+        input(type='text',name='lat',id='lat')  
+        p
+        label(for='long') Long:
+        input(type='text',name='long',id='long')  
+        p
+        input(type='submit',name='submit',value='Submit').submit-button
+
+block sidebar
+  .widget
+    h1= subtitle
+    p= info
+    p Associate it to a Type.
+    p

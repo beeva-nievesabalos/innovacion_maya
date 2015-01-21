@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  p 
+  p
+  form(method='post',action='')
+        label(for='name') Name:
+        input(type='text',name='name',id='name')   
+        p     
+        label(for='description') Description:
+        input(type='text',name='description',id='description')  
+        p
+        label(for='subtype') Subtype of:
+        input(type='text',name='subtype',id='subtype')  
+        p
+        p Messages
+        label(for='message1') 1:
+        input(type='text',name='message1name',id='message1name')
+        input(type='text',name='message1text',id='message1text')  
+        p
+        label(for='message2') 2:
+        input(type='text',name='message2name',id='message2name')
+        input(type='text',name='message2text',id='message2text')  
+        p
+        p Functions
+        label(for='function1') 1:
+        input(type='text',name='function1name',id='function1name')
+        input(type='text',name='function1code',id='function1code') 
+        p
+        label(for='function2') 2:
+        input(type='text',name='function2name',id='function2name')
+        input(type='text',name='function2code',id='function2code') 
+        p
+        input(type='submit',name='submit',value='Submit').submit-button
+
+block sidebar
+  .widget
+    h1= subtitle
+    p= info
+    p Remember: Name must be unique.
+    p

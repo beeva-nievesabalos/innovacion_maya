@@ -1,0 +1,78 @@
+doctype 5
+html(lang="en")
+  head
+    title= title
+    link(rel='stylesheet', href='/css/component.css')
+    link(rel='stylesheet', href='/css/font-awesome.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/js/modernizr.custom.js')
+  body
+    .mp-pusher#mp-pusher
+      nav(id="mp-menu", class="mp-menu")
+          div.mp-level
+            h2.icon.icon-globe Environments & Things
+            ul
+              li.icon
+                a.icon.icon-home(href="/ioe") Home
+                
+
+              li.icon.icon-arrow-left
+                a.icon.icon-puzzle-piece(href="#") Things
+                div.mp-level
+                  h2.icon.icon-puzzle-piece Things
+                  a.mp-back(href="#") back
+                  ul
+                    li.icon
+                      a.icon.icon-list(href="/ioe/showThings") Show all
+                    li.icon
+                      a.icon.icon-plus-sign(href="/ioe/addThing") Add new
+                      
+              li.icon.icon-arrow-left
+                a.icon.icon-archive(href="#") Formats
+                div.mp-level
+                  h2.icon.icon-archive Formats
+                  a.mp-back(href="#") back
+                  ul
+                    li.icon
+                      a.icon.icon-list(href="/ioe/showTypes") Show all
+                    li.icon
+                      a.icon.icon-plus-sign(href="/ioe/addType") Add new
+
+              li.icon.icon-arrow-left
+                a.icon.icon-globe(href="#") Environments
+                div.mp-level
+                  h2.icon.icon-archive Environments
+                  a.mp-back(href="#") back
+                  ul
+                    li.icon
+                      a.icon.icon-list(href="/ioe/showEnvironments") Show all
+                    li.icon
+                      a.icon.icon-plus-sign(href="/ioe/addEnvironment") Add new
+
+              li.icon.icon-arrow-left
+                a.icon.icon-book(href="#") Beeva Library
+                div.mp-level
+                  h2.icon.icon-archive Beeva Library
+                  a.mp-back(href="#") back
+                  ul
+                    li.icon
+                      a.icon.icon-list(href="/beevalibs/book/list") List
+                    
+      header
+        h1
+          a(href="/ioe", title="MAYA") Maya
+
+      a#trigger.menu-trigger.icon-align-justify(href="#") Menu
+      .container
+        .main-content
+          block content
+        .sidebar
+          block sidebar
+      footer
+        p 2013 - BEEVA Innovation
+    script(src="/js/classie.js")
+    script(src="/js/mlpushmenu.js")
+    script
+      new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) )
+    
+

@@ -1,0 +1,78 @@
+
+
+// Objetos
+define User {
+    name : '',
+    id: '',
+    constructor : function(name, id){
+        this.name = name;
+        this.id = id;
+    }
+}
+
+define Event {
+    type : '',
+    message : 'Evento',
+    class : '',
+    method: '',
+    params : '',
+    constructor : function(type, message){
+        this.type = type;
+        this.message = message;
+    }
+}
+
+// Reglas
+rule LlegadaUsuario {
+    when {
+        e : Event e.type =~ /.*llegada$/;
+        u : User isNotNull(u);
+    }
+    then {
+        e.class = 'biix';
+        e.method = 'newEvent';
+        e.params = 'llegada';
+        //console.log("biix.newEvent.llegada:" + u.name);
+    }
+}
+
+
+rule SalidaUsuario {
+    when {
+        e : Event e.type =~ /.*salida$/;
+        u : User isNotNull(u);
+    }
+    then {
+        e.class = 'biix';
+        e.method = 'newEvent';
+        e.params = 'salida';
+        //console.log("biix.newEvent.salida:" + u.name);
+    }
+}
+
+rule AgendaHoyUsuario {
+    when {
+        e : Event e.type =~ /.*agendaHoy$/;
+        u : User isNotNull(u);
+    }
+    then {
+        e.class = 'calendar';
+        e.method = 'agendaHoy';
+        e.params = '';
+        //console.log("calendar.agendaHoy:" + u.name);
+    }
+}
+
+rule CalendariosUsuario {
+    when {
+        e : Event e.type =~ /.*listaCalendarios$/;
+        u : User isNotNull(u);
+    }
+    then {
+        e.class = 'calendar';
+        e.method = 'listaCalendarios';
+        e.params = '';
+        //console.log("calendar.listaCalendarios:" + u.name);
+    }
+}
+

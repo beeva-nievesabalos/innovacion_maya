@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		153C7CF71754F78800C32296 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C7CF51754F78800C32296 /* BLE.m */; };
+		153C7CFB1754FAAE00C32296 /* MMBLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C7CFA1754FAAE00C32296 /* MMBLEManager.m */; };
+		153C7CFD1755FB8000C32296 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153C7CFC1755FB8000C32296 /* CoreBluetooth.framework */; };
+		153C7D02175740B600C32296 /* MMRequestConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C7D01175740B600C32296 /* MMRequestConnect.m */; };
+		15646681175F964500C8FB89 /* console_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 15646680175F964500C8FB89 /* console_btn.png */; };
+		15646686175F96D700C8FB89 /* ledOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 15646682175F96D700C8FB89 /* ledOff.png */; };
+		15646687175F96D700C8FB89 /* ledOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15646683175F96D700C8FB89 /* ledOff@2x.png */; };
+		15646688175F96D700C8FB89 /* ledOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 15646684175F96D700C8FB89 /* ledOn.png */; };
+		15646689175F96D700C8FB89 /* ledOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15646685175F96D700C8FB89 /* ledOn@2x.png */; };
+		1564668B175F972300C8FB89 /* ble_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1564668A175F972300C8FB89 /* ble_logo.png */; };
+		15EE55CD17213AD10008F36B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EE55CC17213AD10008F36B /* UIKit.framework */; };
+		15EE55CF17213AD10008F36B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EE55CE17213AD10008F36B /* Foundation.framework */; };
+		15EE55D117213AD10008F36B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EE55D017213AD10008F36B /* CoreGraphics.framework */; };
+		15EE55D717213AD10008F36B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15EE55D517213AD10008F36B /* InfoPlist.strings */; };
+		15EE55D917213AD10008F36B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EE55D817213AD10008F36B /* main.m */; };
+		15EE55DD17213AD10008F36B /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EE55DC17213AD10008F36B /* MMAppDelegate.m */; };
+		15EE55DF17213AD10008F36B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 15EE55DE17213AD10008F36B /* Default.png */; };
+		15EE55E117213AD10008F36B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15EE55E017213AD10008F36B /* Default@2x.png */; };
+		15EE55E317213AD10008F36B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15EE55E217213AD10008F36B /* Default-568h@2x.png */; };
+		15EE55E617213AD10008F36B /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EE55E517213AD10008F36B /* MMViewController.m */; };
+		15EE55E917213AD10008F36B /* MMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15EE55E717213AD10008F36B /* MMViewController.xib */; };
+		15EE55F017213AE70008F36B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EE55EF17213AE70008F36B /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		153C7CF41754F78800C32296 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		153C7CF51754F78800C32296 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		153C7CF61754F78800C32296 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		153C7CF91754FAAE00C32296 /* MMBLEManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMBLEManager.h; path = "[Manager]/MMBLEManager.h"; sourceTree = "<group>"; };
+		153C7CFA1754FAAE00C32296 /* MMBLEManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMBLEManager.m; path = "[Manager]/MMBLEManager.m"; sourceTree = "<group>"; };
+		153C7CFC1755FB8000C32296 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		153C7D00175740B600C32296 /* MMRequestConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMRequestConnect.h; path = "[Manager]/MMRequestConnect.h"; sourceTree = "<group>"; };
+		153C7D01175740B600C32296 /* MMRequestConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMRequestConnect.m; path = "[Manager]/MMRequestConnect.m"; sourceTree = "<group>"; };
+		15646680175F964500C8FB89 /* console_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = console_btn.png; sourceTree = "<group>"; };
+		15646682175F96D700C8FB89 /* ledOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ledOff.png; sourceTree = "<group>"; };
+		15646683175F96D700C8FB89 /* ledOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ledOff@2x.png"; sourceTree = "<group>"; };
+		15646684175F96D700C8FB89 /* ledOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ledOn.png; sourceTree = "<group>"; };
+		15646685175F96D700C8FB89 /* ledOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ledOn@2x.png"; sourceTree = "<group>"; };
+		1564668A175F972300C8FB89 /* ble_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ble_logo.png; sourceTree = "<group>"; };
+		15EE55C917213AD10008F36B /* Maya Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maya Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15EE55CC17213AD10008F36B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		15EE55CE17213AD10008F36B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		15EE55D017213AD10008F36B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		15EE55D417213AD10008F36B /* Maya Mobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Maya Mobile-Info.plist"; sourceTree = "<group>"; };
+		15EE55D617213AD10008F36B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		15EE55D817213AD10008F36B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15EE55DA17213AD10008F36B /* Maya Mobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Maya Mobile-Prefix.pch"; sourceTree = "<group>"; };
+		15EE55DB17213AD10008F36B /* MMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMAppDelegate.h; sourceTree = "<group>"; };
+		15EE55DC17213AD10008F36B /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
+		15EE55DE17213AD10008F36B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		15EE55E017213AD10008F36B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		15EE55E217213AD10008F36B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		15EE55E417213AD10008F36B /* MMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
+		15EE55E517213AD10008F36B /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
+		15EE55E817213AD10008F36B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MMViewController.xib; sourceTree = "<group>"; };
+		15EE55EF17213AE70008F36B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15EE55C617213AD10008F36B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153C7CFD1755FB8000C32296 /* CoreBluetooth.framework in Frameworks */,
+				15EE55F017213AE70008F36B /* SystemConfiguration.framework in Frameworks */,
+				15EE55CD17213AD10008F36B /* UIKit.framework in Frameworks */,
+				15EE55CF17213AD10008F36B /* Foundation.framework in Frameworks */,
+				15EE55D117213AD10008F36B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		153C7CF11754F78800C32296 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1564667F175F964500C8FB89 /* Images */,
+				153C7CF21754F78800C32296 /* External Libs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		153C7CF21754F78800C32296 /* External Libs */ = {
+			isa = PBXGroup;
+			children = (
+				153C7CF31754F78800C32296 /* BLE_Framework */,
+			);
+			path = "External Libs";
+			sourceTree = "<group>";
+		};
+		153C7CF31754F78800C32296 /* BLE_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				153C7CF41754F78800C32296 /* BLE.h */,
+				153C7CF51754F78800C32296 /* BLE.m */,
+				153C7CF61754F78800C32296 /* BLEDefines.h */,
+			);
+			path = BLE_Framework;
+			sourceTree = "<group>";
+		};
+		153C7CF81754F7D600C32296 /* [Manager] */ = {
+			isa = PBXGroup;
+			children = (
+				153C7CFF1757408C00C32296 /* Request */,
+				153C7CFE1757408400C32296 /* BLE */,
+			);
+			name = "[Manager]";
+			sourceTree = "<group>";
+		};
+		153C7CFE1757408400C32296 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				153C7CF91754FAAE00C32296 /* MMBLEManager.h */,
+				153C7CFA1754FAAE00C32296 /* MMBLEManager.m */,
+			);
+			name = BLE;
+			sourceTree = "<group>";
+		};
+		153C7CFF1757408C00C32296 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				153C7D00175740B600C32296 /* MMRequestConnect.h */,
+				153C7D01175740B600C32296 /* MMRequestConnect.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		1564667F175F964500C8FB89 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1564668A175F972300C8FB89 /* ble_logo.png */,
+				15646682175F96D700C8FB89 /* ledOff.png */,
+				15646683175F96D700C8FB89 /* ledOff@2x.png */,
+				15646684175F96D700C8FB89 /* ledOn.png */,
+				15646685175F96D700C8FB89 /* ledOn@2x.png */,
+				15646680175F964500C8FB89 /* console_btn.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		15EE55C017213AD10008F36B = {
+			isa = PBXGroup;
+			children = (
+				15EE55D217213AD10008F36B /* Maya Mobile */,
+				15EE55CB17213AD10008F36B /* Frameworks */,
+				15EE55CA17213AD10008F36B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15EE55CA17213AD10008F36B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15EE55C917213AD10008F36B /* Maya Mobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15EE55CB17213AD10008F36B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				153C7CFC1755FB8000C32296 /* CoreBluetooth.framework */,
+				15EE55D017213AD10008F36B /* CoreGraphics.framework */,
+				15EE55CE17213AD10008F36B /* Foundation.framework */,
+				15EE55EF17213AE70008F36B /* SystemConfiguration.framework */,
+				15EE55CC17213AD10008F36B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15EE55D217213AD10008F36B /* Maya Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				153C7CF81754F7D600C32296 /* [Manager] */,
+				15EE55DB17213AD10008F36B /* MMAppDelegate.h */,
+				15EE55DC17213AD10008F36B /* MMAppDelegate.m */,
+				15EE55E417213AD10008F36B /* MMViewController.h */,
+				15EE55E517213AD10008F36B /* MMViewController.m */,
+				15EE55E717213AD10008F36B /* MMViewController.xib */,
+				153C7CF11754F78800C32296 /* Resources */,
+				15EE55D317213AD10008F36B /* Supporting Files */,
+			);
+			path = "Maya Mobile";
+			sourceTree = "<group>";
+		};
+		15EE55D317213AD10008F36B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15EE55D417213AD10008F36B /* Maya Mobile-Info.plist */,
+				15EE55D517213AD10008F36B /* InfoPlist.strings */,
+				15EE55D817213AD10008F36B /* main.m */,
+				15EE55DA17213AD10008F36B /* Maya Mobile-Prefix.pch */,
+				15EE55DE17213AD10008F36B /* Default.png */,
+				15EE55E017213AD10008F36B /* Default@2x.png */,
+				15EE55E217213AD10008F36B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15EE55C817213AD10008F36B /* Maya Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15EE55EC17213AD10008F36B /* Build configuration list for PBXNativeTarget "Maya Mobile" */;
+			buildPhases = (
+				15EE55C517213AD10008F36B /* Sources */,
+				15EE55C617213AD10008F36B /* Frameworks */,
+				15EE55C717213AD10008F36B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Maya Mobile";
+			productName = "Maya Mobile";
+			productReference = 15EE55C917213AD10008F36B /* Maya Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15EE55C117213AD10008F36B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Juanpe Catalán ";
+			};
+			buildConfigurationList = 15EE55C417213AD10008F36B /* Build configuration list for PBXProject "Maya Mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 15EE55C017213AD10008F36B;
+			productRefGroup = 15EE55CA17213AD10008F36B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15EE55C817213AD10008F36B /* Maya Mobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15EE55C717213AD10008F36B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15EE55D717213AD10008F36B /* InfoPlist.strings in Resources */,
+				15EE55DF17213AD10008F36B /* Default.png in Resources */,
+				15EE55E117213AD10008F36B /* Default@2x.png in Resources */,
+				15EE55E317213AD10008F36B /* Default-568h@2x.png in Resources */,
+				15EE55E917213AD10008F36B /* MMViewController.xib in Resources */,
+				15646681175F964500C8FB89 /* console_btn.png in Resources */,
+				15646686175F96D700C8FB89 /* ledOff.png in Resources */,
+				15646687175F96D700C8FB89 /* ledOff@2x.png in Resources */,
+				15646688175F96D700C8FB89 /* ledOn.png in Resources */,
+				15646689175F96D700C8FB89 /* ledOn@2x.png in Resources */,
+				1564668B175F972300C8FB89 /* ble_logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15EE55C517213AD10008F36B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15EE55D917213AD10008F36B /* main.m in Sources */,
+				15EE55DD17213AD10008F36B /* MMAppDelegate.m in Sources */,
+				15EE55E617213AD10008F36B /* MMViewController.m in Sources */,
+				153C7CF71754F78800C32296 /* BLE.m in Sources */,
+				153C7CFB1754FAAE00C32296 /* MMBLEManager.m in Sources */,
+				153C7D02175740B600C32296 /* MMRequestConnect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		15EE55D517213AD10008F36B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15EE55D617213AD10008F36B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		15EE55E717213AD10008F36B /* MMViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15EE55E817213AD10008F36B /* en */,
+			);
+			name = MMViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15EE55EA17213AD10008F36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		15EE55EB17213AD10008F36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15EE55ED17213AD10008F36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maya Mobile/Maya Mobile-Prefix.pch";
+				INFOPLIST_FILE = "Maya Mobile/Maya Mobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		15EE55EE17213AD10008F36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maya Mobile/Maya Mobile-Prefix.pch";
+				INFOPLIST_FILE = "Maya Mobile/Maya Mobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15EE55C417213AD10008F36B /* Build configuration list for PBXProject "Maya Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15EE55EA17213AD10008F36B /* Debug */,
+				15EE55EB17213AD10008F36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15EE55EC17213AD10008F36B /* Build configuration list for PBXNativeTarget "Maya Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15EE55ED17213AD10008F36B /* Debug */,
+				15EE55EE17213AD10008F36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15EE55C117213AD10008F36B /* Project object */;
+}

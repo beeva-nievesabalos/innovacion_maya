@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  ul
+    each val in result
+      li: a(href='./thing/' + val.id) #{val.name}
+
+
+block sidebar
+  .widget
+    h1= subtitle
+    p= info
+    p Things stored in database.
+    p

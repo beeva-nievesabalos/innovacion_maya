@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        
+    <TextView
+        android:id="@+id/lblAppID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/lblAppID"
+         />
+
+    <EditText
+        android:id="@+id/txtAppID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblAppID"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/lblAppID"
+        android:clickable="false"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:text="@string/appName"
+         />
+
+    <TextView
+        android:id="@+id/lblUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_below="@+id/lblAppID"
+        android:layout_alignLeft="@+id/lblAppID"
+        android:layout_marginTop="25dp"     
+        android:text="@string/lblUserID" />
+
+    <EditText
+        android:id="@+id/txtUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAppID"
+        android:layout_alignRight="@+id/txtAppID"
+        android:layout_toRightOf="@+id/lblUserID"
+        android:layout_alignBaseline="@+id/lblUserID"
+        android:inputType="textPersonName"
+        android:text="@string/userName" />
+
+    <TextView
+        android:id="@+id/lblAlias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblAppID"
+        android:layout_below="@+id/lblUserID"
+        android:layout_marginTop="25dp"
+        android:text="@string/lblAlias"
+         />
+		        
+    <EditText
+        android:id="@+id/txtAlias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblAlias"
+        android:layout_alignLeft="@+id/txtUserID"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/txtUserID"
+        android:layout_toRightOf="@+id/lblAlias"
+        android:inputType="textPersonName"
+        android:text="@string/lblDefaultAlias"
+         />
+
+    <TextView
+        android:id="@+id/lblAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblAppID"
+        android:layout_below="@+id/lblAlias"
+        android:layout_marginTop="25dp"
+        android:text="@string/lblAccept"
+         />
+
+    <Spinner
+        
+        android:id="@+id/spinnerAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_alignBaseline="@+id/lblAccept"
+        android:layout_toRightOf="@+id/lblAccept" />
+    
+    <Spinner
+       
+        android:id="@+id/spinnerEnviroment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_alignBaseline="@+id/lblAccept"
+        android:layout_toRightOf="@+id/spinnerAccept" />
+
+    <EditText
+        android:id="@+id/txtConsola"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/btnRegistrar"
+        android:layout_width="wrap_content"      
+        android:layout_height="wrap_content"   
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblAccept"
+        android:layout_alignRight="@+id/txtAppID"
+        android:clickable="false"
+
+        android:focusable="false"
+        android:inputType="textMultiLine|textPersonName" />
+
+      <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btnRegistrar" />
+
+      <Button
+        android:id="@+id/btnDesRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnRegistrar"
+        android:layout_alignBaseline="@+id/btnRegistrar"         
+        android:text="@string/btnDesRegistrar" />
+
+      <Button
+        android:id="@+id/btnRefreshConsola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_toRightOf="@+id/btnDesRegistrar"
+        android:layout_alignBaseline="@+id/btnRegistrar"        
+        android:text="@string/btnRefreshConsola" />
+
+</RelativeLayout>

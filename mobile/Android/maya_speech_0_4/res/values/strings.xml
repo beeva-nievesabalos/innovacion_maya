@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Maya</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_gcm">Maya PUSH Notifications</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="lblToken">Token:</string>
+    <string name="btnDesRegistrar">Des-registrar</string>
+    <string name="lblOldToken">Old Token</string>
+    <string name="lblAcutalToken">Actual Token</string>
+    <string name="lblAppID">App ID</string>
+    <string name="lblUserID">User ID</string>
+    <string name="btnActualizar">N</string>
+    <string name="btnBorrarToken">C</string>
+    <string name="lblContentType">CType</string>
+    <string name="lblAccept">Accept</string>
+    <string name="lblXML">XML</string>
+    <string name="lblJSON">JSON</string>
+    <string name="mensaje">Mensaje:</string>
+    <string name="btnSalir">Salir</string>
+    <string name="btnRefreshConsola">Refrescar</string>
+    <string name="lblAlias">Alias</string>
+    <string name="lblDevideID">Identificador del dispositivo</string>
+    <string name="lblDefaultAlias">Trabajo</string>
+    <string name="userName">mayaTest</string>
+    <string name="appName">com.bbva.baas.notifier.test</string>
+    <string name="action_settings"> </string>
+</resources>

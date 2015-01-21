@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  p
+  h2= result.me.name
+  h3= result.me.description
+  p
+  dl
+    dt What do I have?
+    dd
+      ul
+        each val in result.things
+          if val.rel== "HAS"
+            if val.data.label
+              li= val.data.name + " - " + val.data.description
+            else
+              each value in val.data
+                li= value
+
+block sidebar
+  .widget
+    h1= subtitle
+    p= info
+    p= '#'+result.me.id

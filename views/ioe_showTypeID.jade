@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  p
+  h2= result.me.name
+  h3= result.me.description
+  p
+  dl
+    each val in result
+      if val.data
+        dt= val.question 
+        if val.data.name
+          dd= val.data.name + " - " + val.data.description
+        else if val.data.rad
+          dd= "(" + val.data.lat + ", " + val.data.long +")"
+        else
+          each value in val.data
+            dd= value
+
+
+block sidebar
+  .widget
+    h1= subtitle
+    p= info
+    p= '#' + result.me.id

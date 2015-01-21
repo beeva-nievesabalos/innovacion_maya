@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	 <Button
+	     android:id="@+id/btnSalir"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignLeft="@+id/togglebutton"
+	     android:layout_alignParentBottom="true"
+	     android:layout_marginBottom="97dp"
+	     android:text="@string/btnSalir"
+	     android:visibility="invisible" />
+
+	 <ToggleButton
+	     android:id="@+id/togglebutton"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentRight="true"
+	     android:layout_alignParentTop="true"
+	     android:onClick="onToggleClicked"
+	     android:textOff="TTS OFF"
+	     android:textOn="TTS ON" />
+
+	 <LinearLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentLeft="true"
+	     android:layout_below="@+id/imageView1"
+	     android:orientation="vertical"
+	     android:paddingBottom="3dp"
+	     android:paddingLeft="3dp"
+	     android:paddingRight="3dp"
+	     android:paddingTop="3dp" >
+
+	     <TextView
+	         android:id="@+id/lblFecha"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:background="@color/cl_azulclaro_and"
+	         android:paddingBottom="5dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="10dp"
+	         android:paddingTop="5dp"
+	         android:textColor="@color/cl_negro" />
+
+	     <TextView
+	         android:id="@+id/lblMensaje"
+	         android:layout_width="fill_parent"
+	         android:layout_height="0dp"
+	         android:layout_weight="1"
+	         android:background="@color/cl_azuloscuro_and"
+	         android:gravity="top"
+	         android:paddingBottom="5dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="5dp"
+	         android:paddingTop="5dp"
+	         android:textColor="@color/cl_negro" />
+	      
+	 </LinearLayout>
+
+	 <ImageView
+	     android:id="@+id/imageView1"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentLeft="true"
+	     android:layout_alignParentTop="true"
+	     android:layout_marginLeft="18dp"
+	     android:layout_marginTop="14dp"
+	     android:src="@drawable/user" />
+	 
+</RelativeLayout>
